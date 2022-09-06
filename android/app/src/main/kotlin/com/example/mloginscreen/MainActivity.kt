@@ -1,4 +1,4 @@
-package com.yashkc2025.login_screen
+package com.example.mloginscreen
 
 import io.flutter.embedding.android.FlutterActivity
 
