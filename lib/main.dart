@@ -13,15 +13,10 @@ class HelloWorld extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Center(
-          child: Container(
-            height: 400,
-            width: 400,
-            // color : Colors.blue,
-            child : const Center(child : Text('Hel',style: TextStyle(color: Colors.deepOrange ),),),
-          ),
-        ),
         backgroundColor: Colors.black,
+        appBar: AppBar(
+          title : Text('Login Screen')
+        ),
       ),
     );
   }
