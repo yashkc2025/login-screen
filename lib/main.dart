@@ -13,13 +13,19 @@ class MLogin extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
-          backgroundColor: Colors.black,
+          backgroundColor: Colors.white,
           body: SafeArea(
             child : Column(
               children: [
                 const SizedBox(height: 120,),
-                Center(child: GradientText('Login',style: const TextStyle(fontSize: 80,fontWeight: FontWeight.w100,),colors: [HexColor("#00fefc"), HexColor("#7fff00"),],gradientDirection: GradientDirection.ltr),),
-            ],
+                Center(child: const Text('Login',style: TextStyle(fontSize: 80,fontWeight: FontWeight.w100))),
+                Container(
+                  height: 50,
+                  width: 300,
+                  color: Colors.deepOrange,
+                  child : Text('Login', style: TextStyle(fontSize: 25,color: Colors.white),)
+                )
+              ],
             ),
           ),
         ),
