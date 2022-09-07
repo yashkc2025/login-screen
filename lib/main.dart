@@ -9,12 +9,29 @@ class MLogin extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-        home:Scaffold(
-            body: Center(
-                child: Text('Hey')
-            )
-        )
+    return MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: Scaffold(
+          backgroundColor: Colors.white,
+          body: SafeArea(
+            child : Column(
+              children: [
+                Center(
+                    child: Text(
+                        'Login',
+                        style: TextStyle(
+                          fontSize: 24,
+
+                          foreground: Paint()
+                            ..style = PaintingStyle.stroke
+                            ..strokeWidth = 1
+                            ..color = Colors.amber,),
+                    ),
+                ),
+            ],
+            ),
+          ),
+        ),
     );
   }
 }
