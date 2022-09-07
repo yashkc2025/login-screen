@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'package:simple_gradient_text/simple_gradient_text.dart';
+import 'package:hexcolor/hexcolor.dart';
 void main(){
   runApp(const MLogin());
 }
@@ -12,22 +13,12 @@ class MLogin extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
-          backgroundColor: Colors.white,
+          backgroundColor: Colors.black,
           body: SafeArea(
             child : Column(
               children: [
-                Center(
-                    child: Text(
-                        'Login',
-                        style: TextStyle(
-                          fontSize: 24,
-
-                          foreground: Paint()
-                            ..style = PaintingStyle.stroke
-                            ..strokeWidth = 1
-                            ..color = Colors.amber,),
-                    ),
-                ),
+                const SizedBox(height: 120,),
+                Center(child: GradientText('Login',style: const TextStyle(fontSize: 80,fontWeight: FontWeight.w100,),colors: [HexColor("#00fefc"), HexColor("#7fff00"),],gradientDirection: GradientDirection.ltr),),
             ],
             ),
           ),
