@@ -1,3 +1,3 @@
 # Login-Screen
-Project is left incomplete.
+Project is under development.
 
